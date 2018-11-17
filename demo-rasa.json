@@ -1,0 +1,715 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "chinese",
+        "synonyms": ["Chinese", "Chines", "chines"]
+      },
+      {
+        "value": "hi",
+        "synonyms": ["expensive", "valued"]
+      },
+      {
+        "value": "lo",
+        "synonyms": ["cheap"]
+      },
+      {
+        "value": "Tesla",
+        "synonyms": ["Tesla"]
+      },
+      {
+        "value": "Apple",
+        "synonyms": ["Apple"]
+      },
+      {
+        "value": "Microsoft",
+        "synonyms": ["Microsoft"]
+      },
+      {
+        "value": "Alcoa",
+        "synonyms": ["Alcoa"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "I would like to know the close price of Microsoft and Apple",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 40,
+            "end": 49,
+            "value": "Microsoft",
+            "entity": "company"
+          },
+	  {
+            "start": 54,
+            "end": 59,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I would like to know the close price of Tesla and Apple",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 40,
+            "end": 45,
+            "value": "Tesla",
+            "entity": "company"
+          },
+	  {
+            "start": 50,
+            "end": 55,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am searching for the close price of Tesla",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 38,
+            "end": 43,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Tell me about Microsoft's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 14,
+            "end": 23,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I want to know the Tesla's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 24,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I want to know the Apple's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 24,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me something about Apple's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 25,
+            "end": 30,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show Tesla's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 5,
+            "end": 10,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "let me go over the Apple's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 24,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "let me go over the Tesla's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 24,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "let me go over the Microsoft's close price",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 28,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me the close price of Tesla",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 27,
+            "end": 32,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me the close price of Microsoft",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 27,
+            "end": 36,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am searching for the close price of Alcoa.",
+        "intent": "close",
+        "entities": [          
+	  {
+            "start": 38,
+            "end": 43,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "What about today",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 11,
+            "end": 16,
+            "value": "today",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "What about yesterday",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 11,
+            "end": 20,
+            "value": "yesterday",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "What about December 20th",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 11,
+            "end": 24,
+            "value": "December 20th",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "How about February 1st",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 10,
+            "end": 22,
+            "value": "February 1st",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "How about August 20th in 2016",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 10,
+            "end": 22,
+            "value": "August 20th in 2016",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "How about September 1st",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 10,
+            "end": 22,
+            "value": "September 1st",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "additional condition is February 1st",
+        "intent": "time",
+        "entities": [          
+	  {
+            "start": 24,
+            "end": 36,
+            "value": "February 1st",
+            "entity": "time"
+          }
+	]
+      },
+      {
+        "text": "Get the volume of Tesla for me.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 18,
+            "end": 23,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Get the volume of Microsoft for me.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 18,
+            "end": 27,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me the volume of Apple.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 22,
+            "end": 27,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me Alcoa's volume",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 8,
+            "end": 13,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am looking for volume of Apple.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 27,
+            "end": 32,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am trying to find out something about volume of Microsoft.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 50,
+            "end": 59,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Tell me the volume of Tesla.",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 22,
+            "end": 27,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "How much is the volume of Alcoa?",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 26,
+            "end": 31,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "How much is the Apple's volume?",
+        "intent": "volume",
+        "entities": [          
+	  {
+            "start": 16,
+            "end": 21,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "How much is the Apple's value?",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 16,
+            "end": 21,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Get the value of Tesla for me.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 17,
+            "end": 22,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Get the value of Microsoft for me.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 17,
+            "end": 26,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me the value of Apple.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 21,
+            "end": 26,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me Alcoa's value",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 8,
+            "end": 13,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am looking for value of Apple.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 26,
+            "end": 31,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am trying to find out something about value of Microsoft.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 49,
+            "end": 58,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Tell me the value of Tesla.",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 21,
+            "end": 26,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "How much is the value of Alcoa?",
+        "intent": "value",
+        "entities": [          
+	  {
+            "start": 25,
+            "end": 30,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Tell me the highest price",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Show me the lowest price",
+        "intent": "price",
+        "entities": []
+      },
+      {
+        "text": "Tell me the price of Alcoa.",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 21,
+            "end": 26,
+            "value": "Alcoa",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Show me the price of Microsoft.",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 21,
+            "end": 30,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "Tell me Apple's price",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 8,
+            "end": 13,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I would like to know the price of Apple",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 34,
+            "end": 39,
+            "value": "Apple",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I want to find out Tesla's price",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 19,
+            "end": 24,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I want to know Tesla's price",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 15,
+            "end": 20,
+            "value": "Tesla",
+            "entity": "company"
+          }
+	]
+      },
+      {
+        "text": "I am looking for Microsoft's price",
+        "intent": "price",
+        "entities": [          
+	  {
+            "start": 17,
+            "end": 26,
+            "value": "Microsoft",
+            "entity": "company"
+          }
+	]
+      }
+    ]
+  }
+}
